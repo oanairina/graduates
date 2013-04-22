@@ -3,6 +3,7 @@ package gui;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import javax.swing.JOptionPane;
 import src.User;
@@ -30,13 +31,16 @@ public class MyLoginProxy implements MyLoginInterface {
             br.close();
             in.close();
             fstream.close();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public boolean isSucceeded() {
-        return succeeded;
+        if (this != null) {
+            return succeeded;
+        }else
+            return false;
     }
 
     public void enterShop() {

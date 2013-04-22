@@ -16,7 +16,5 @@ public interface Animal {
 
     public double getPrice();
 
-    public String getBreed();
-
     public int getWeight();
 }

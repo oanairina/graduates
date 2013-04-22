@@ -4,10 +4,14 @@ import java.io.Serializable;
 
 public class Accessories implements Serializable {
 
-    private String name;
-    private String description;
-    private String producer;
-    private double price;
+    private String name = null;
+    private String description = null;
+    private String producer = null;
+    private double price = 0;
+    
+    public Accessories(){
+        
+    }
 
     public Accessories(String name, String description,  double price, String producer) {
         this.name = name;

@@ -12,8 +12,7 @@ public class Cat implements Animal, Serializable {
     private String origin;
     private Set<String> color = new HashSet<String>();
     private double price;
-    private String breed;
-    private int weight;
+      private int weight;
 
     @Override
     public String getType() {
@@ -45,12 +44,7 @@ public class Cat implements Animal, Serializable {
         return price;
     }
 
-    @Override
-    public String getBreed() {
-        return breed;
-    }
     
-  
     public void setGender(String gender) {
         this.gender = gender;
     }
@@ -69,10 +63,6 @@ public class Cat implements Animal, Serializable {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public void setBreed(String breed) {
-        this.breed = breed;
     }
 
     @Override

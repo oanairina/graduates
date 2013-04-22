@@ -1,0 +1,21 @@
+Order: 
+Pets: Type= Cat
+Gender = Male
+Age = 3
+Origin = dd
+Color = [dd]
+Price = 2.0
+
+
+Food: Name: asd
+Producer: asd
+Price: 2.0
+Weight: 2.0
+Description: asd
+
+
+Accessories: Name: ad
+Producer: sdfsdf
+Price: 22.0
+Description: asd
+
